@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gradient-text{
+    background: linear-gradient(to right, #8550d2, #351564);
+    font-size: 'Archivo Black', sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.primary-button{
+    border: none;
+    background-color: #474747;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.primary-button:hover{
+    background-color: #5925a4;
+}
+.advcard{
+    width: 100%;
+    height: 100%;
+    background-color: #32145f;
+    color: #fff;
+
+    border-radius: 30px;
+}
+.font1{
+    font-size: 1.3rem;
+}
+.edge{
+    transform: translateY(-2%);
+}
+.toggle1{
+    display: none;
+}
+.res{
+    font-size: 1.8rem;
+}
+
+
+
+
+.hero, section{
+    min-height: 80vh;
+    position: relative;
+}
+.hero h1{
+    font-size: 4.5rem;
+}
+.hero p{
+    color: #474747;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+section:nth-child(odd){
+    background-color: #32145f;
+    color: #fff;
+}
+section h1{
+    font-size: 3rem;
+}
+section p{
+    font-size: 1.3rem;
+}
+footer{
+    background-color: #32145f;
+    color: #fff;
+    min-height: 200px;
+}
+.flex{
+    display: flex;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer{
+    background-color: #474747;
+    color: #fff;
+}
+.links{
+    justify-content: flex-start;
+}
+
+
+@media screen and (max-width: 992px){
+    html{
+        font-size: 15px;
+    }
+    .hero img{
+        width: 400px;
+    }
+    .toggle1{
+        display: block;
+    }
+    .toggle2{
+        display: none;
+    }
+    .links{
+        justify-content: center;
+    }
+    footer h1, footer p{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px){
+    html{
+        font-size: 14px;
+    }
+    .hero img{
+        width: 200px;
+    }
+}
